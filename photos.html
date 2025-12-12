@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos - jamyca</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">jamyca</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Info</a></li>
+                <li><a href="photos.html" class="nav-link active">Photos</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="content-container">
+            <h1 class="page-title">Photo Gallery</h1>
+            <p class="page-subtitle">A collection of moments, projects, and memories</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-image="image/photo1.jpg" data-caption="Photo 1">
+                    <div class="gallery-image-placeholder">
+                        <img src="image/photo1.jpg" alt="Photo 1" class="gallery-image">
+                        <div class="image-overlay">
+                            <p>Photo 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="image/photo2.jpg" data-caption="Photo 2">
+                    <div class="gallery-image-placeholder">
+                        <img src="image/photo2.jpg" alt="Photo 2" class="gallery-image">
+                        <div class="image-overlay">
+                            <p>Photo 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="image/photo3.jpg" data-caption="Photo 3">
+                    <div class="gallery-image-placeholder">
+                        <img src="image/photo3.jpg" alt="Photo 3" class="gallery-image">
+                        <div class="image-overlay">
+                            <p>Photo 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <span class="lightbox-prev" id="lightboxPrev">&#10094;</span>
+        <span class="lightbox-next" id="lightboxNext">&#10095;</span>
+        <img src="" alt="" class="lightbox-image" id="lightboxImage">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <div class="floating-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
